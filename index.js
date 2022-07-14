@@ -1,15 +1,20 @@
-// var http=require('http');
-// var server=http.createServer((req,res)=>{
-//     res.write("Hello");
-//     res.end();
-// });
-// server.listen(1000);
-// console.log("Server Running on 1000 port");
+import React from "react";
+import ReactDom from "react-dom";
+import App from './App.jsx';
 
-var express=require('express');
-var app=express();
-app.use('/',(req,res)=>
-{
-    res.send("Hello Express");
-});
-app.listen(1000);
+ReactDom.render(
+  <>
+      <App name='Akash'/>
+  </>
+, document.getElementById("root"));
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+{/* <Router> */}
+  {/* <Routes> */}
+  {/* </Routes> */}
+{/* </Router> */}
+// import CreateMovie from './CreateMovie.jsx';
+// import MovieList from './MovieList.jsx';
+  // import Navigation from "./Navigation.jsx";
+      {/* <Navigation/> */}
+{/* <Route path="/" element={<CreateMovie />} />
+<Route path="/movielist" element={<MovieList />} /> */}
